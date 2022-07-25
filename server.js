@@ -3,6 +3,9 @@ const path = require('path');
 const app = express();
 const PORT = 3001;
 
+// Routing to /api path
+const api = require('./routes/index');
+
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
