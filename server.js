@@ -6,12 +6,15 @@ const PORT = 3001;
 // Routing to /api path
 const api = require('./routes/index');
 
-// Middleware
-app.use(express.urlencoded({ extended: true }));
+// Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/api', api);
+
+// Landing page is set to index.html found in the public directory
 app.use(express.static('public'));
 
-// Return notes page
+// GET route for notes page
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, './public/notes.html')));
 
 app.listen(PORT, () => console.log("Listening on port 3001..."));
