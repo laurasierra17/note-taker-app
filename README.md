@@ -7,6 +7,8 @@ An Express application that allows users to write and save notes, and also be ab
 
 Link to the deployed app: [click here](https://save-a-note-app.herokuapp.com/)
 
+Disclaimer: As I'm writing this, the Heroku app was deployed around 1 hour ago and it's a bit slow (it takes 1 second for every response). Locally, it behaves normally with no issues.
+
 ## Screenshots
 The landing page of the app:
 ![Landing page of the app](./public/assets/images/landing.png)
