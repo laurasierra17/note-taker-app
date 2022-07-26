@@ -49,10 +49,9 @@ notes.delete('/:id', (req, res) => {
 
         const response = {
             status: 'success',
-            body: newNote,
         };
 
-        // Sned response back to the client
+        // Sendd response back to the client
         res.json(response);
     } else {
         res.json('Error in deleting note');
