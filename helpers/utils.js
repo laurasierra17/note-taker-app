@@ -33,7 +33,7 @@ const readAndAppend = (content, file) => {
 /**
  *  Function to read data from a given a file and delete some content
  *  @param {object} content The content's ID you want to delete from the file.
- *  @param {string} file The path to the file you want to save to.
+ *  @param {string} file The path to the file you want to delete from.
  *  @returns {void} Nothing
  */
  const readAndDelete = (contentId, file) => {

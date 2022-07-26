@@ -2,14 +2,14 @@ const notes = require('express').Router();
 const { readFromFile, readAndAppend, readAndDelete } = require('../helpers/utils');
 const { v4: uuidv4 } = require('uuid');
 
-// GET /api/notes should read the db.json file and return all saved notes as JSON.
+// GET Route for retrieving all notes
 notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) =>
         res.json(JSON.parse(data))
     );
 })
 
-// POST receives a new note, saves it to the db.json file, and returns it to the client
+// POST Route that receives a new note, saves it to the db.json file, and returns it to the client
 notes.post('/', (req, res) => {
     // Destructuring assignment for the items in req.body
     const { title, text } = req.body;
@@ -51,7 +51,7 @@ notes.delete('/:id', (req, res) => {
             status: 'success',
         };
 
-        // Sendd response back to the client
+        // Send response back to the client
         res.json(response);
     } else {
         res.json('Error in deleting note');
