@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-An Express application that allows users to write and save notes, and also be able to check their previously created notes.
+An Express application that allows users to write and save notes, and also be able to check their previously created notes. Using Express, the app is able to save the user's inputs and display it back to them in the form of a list. Once the user clicks on a previous note, the right side of the screen is populated with that information, to allow the user to view what they have previously written. Additionally, they are able to delete notes!
 
 Link to the deployed app: [click here](https://save-a-note-app.herokuapp.com/)
 
